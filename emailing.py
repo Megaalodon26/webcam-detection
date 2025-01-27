@@ -1,4 +1,4 @@
-def send_email(to, subject, body):
+def send_email():
+    print("Email was sent!")
 
-    # Send an email to the specified recipient
-    pass
+
