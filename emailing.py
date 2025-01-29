@@ -4,6 +4,7 @@ from email.message import EmailMessage
 
 
 def send_email(image_path):
+        print("send_email function started")
         email_message = EmailMessage()
         email_message["Subject"] = "Security Alert"
         email_message.set_content("Person detected. See the attached image.")
@@ -18,6 +19,7 @@ def send_email(image_path):
         gmail.login("None...@gmail.com", "None")
         gmail.sendmail(None, email_message.as_string())
         gmail.quit()
+        print("send_email function finished")
 
 
 if __name__ == "__main__":
